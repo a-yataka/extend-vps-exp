@@ -42,7 +42,7 @@ try {
     // await page.click("#checkbox");
     // await page.locator('[placeholder="上の画像の数字を入力"]').click()
 
-    // const bodyHandle = await page.$('body');
+    const bodyHandle = await page.$('body');
     const html = await page.evaluate((body) => body.innerHTML, bodyHandle);
     await console.log(html);
 
