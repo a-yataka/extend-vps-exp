@@ -40,7 +40,7 @@ try {
     await page.locator('[placeholder="上の画像の数字を入力"]').fill(code)
     await page.waitForNavigation({ waitUntil: 'networkidle2' })
 
-    await page.locator(".cb-lb").click()
+    await page.locator(".cb-i").click()
 
     // const bodyHandle = await page.$('body');
     // const html = await page.evaluate((body) => body.innerHTML, bodyHandle);
