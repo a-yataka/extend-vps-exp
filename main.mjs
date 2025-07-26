@@ -42,9 +42,9 @@ try {
     // await page.click("#checkbox");
     // await page.locator('[placeholder="上の画像の数字を入力"]').click()
 
-    const bodyHandle = await page.$('body');
+    // const bodyHandle = await page.$('body');
     const html = await page.evaluate((body) => body.innerHTML, bodyHandle);
-    console.log(html);
+    await console.log(html);
 
     // await page.locator('text=無料VPSの利用を継続する').click()
 } catch (e) {
