@@ -45,7 +45,7 @@ try {
 
 
 
-    await page.locator('text=無料VPSの利用を継続する').click()
+    // await page.locator('text=無料VPSの利用を継続する').click()
 } catch (e) {
     console.error(e)
 } finally {
