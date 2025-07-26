@@ -40,7 +40,9 @@ try {
     await page.locator('[placeholder="上の画像の数字を入力"]').fill(code)
     await page.waitForNavigation({ waitUntil: 'networkidle2' })
 
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(5000)
+    await page.waitForSelector('.cb-lb input[type="checkbox"]', {visible:true})
+
     // await page.locator(".cb-i").click()
     await page.click('.cb-lb input[type="checkbox"]');
 
