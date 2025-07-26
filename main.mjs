@@ -40,8 +40,8 @@ try {
     await page.locator('[placeholder="上の画像の数字を入力"]').fill(code)
 
     await console.log(page)
-    await page.click("#checkbox");
-    await page.locator('[placeholder="上の画像の数字を入力"]').click()
+    // await page.click("#checkbox");
+    // await page.locator('[placeholder="上の画像の数字を入力"]').click()
 
 
 
