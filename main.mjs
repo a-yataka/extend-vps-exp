@@ -53,7 +53,7 @@ try {
 } catch (e) {
     console.error(e)
 } finally {
-    await setTimeout(5000)
+    await setTimeout(10000)
     await recorder.stop()
     await browser.close()
 }
