@@ -39,7 +39,7 @@ try {
     const code = await fetch('https://captcha-120546510085.asia-northeast1.run.app', { method: 'POST', body }).then(r => r.text())
     await page.locator('[placeholder="上の画像の数字を入力"]').fill(code)
 
-    await console.log(page)
+    console.log(page)
     // await page.click("#checkbox");
     // await page.locator('[placeholder="上の画像の数字を入力"]').click()
 
